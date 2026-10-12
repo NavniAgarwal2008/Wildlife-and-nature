@@ -1,0 +1,282 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #fff;
+}
+
+/* Header */
+header {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  z-index: 10;
+}
+
+header .logo img {
+  height: 100px;
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: black;
+  text-align: justify;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  justify-content: space-around;
+  font-size: large;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+.support-btn {
+  background: #2e7d32;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.support-btn:hover {
+  background: #1b5e20;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/e0/28/1a/manzanita-lake-camping.jpg?w=900&h=-1&s=1') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero .overlay {
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ff9800;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: #e65100;
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .hero h1 { font-size: 2em; }
+  .hero p { font-size: 1em; }
+}
+
+
+
+/* Species Section */
+.species {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* ensures cards wrap neatly */
+  margin-top: 20px;
+}
+.card {
+  background:rgb(1, 70, 1);
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Projects */
+.projects {
+  background: #e8f5e9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.project {
+  background: rgb(1, 72, 1);
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+.project:hover {
+  background: #c8e6c9;
+}
+
+/* Get Involved */
+.involved {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.involved .btn {
+  margin: 10px;
+}
+
+/* Footer */
+footer {
+  background: #2e7d32;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .cards, .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card, .project {
+    width: 90%;
+  }
+  
+}
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f1f8e9; /* light green background */
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  color: #2e7d32; /* dark green heading */
+  font-size: 2em;
+}
+
+/* Form Box */
+#contactForm {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Input Fields */
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+  border-color: #2e7d32; /* green highlight on focus */
+  outline: none;
+}
+
+/* Submit Button */
+#contactForm button {
+  width: 100%;
+  padding: 12px;
+  background: #2e7d32; /* green button */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+#contactForm button:hover {
+  background: #1b5e20; /* darker green on hover */
+  transform: scale(1.05);
+}
+
+/* Output Area (if you show submitted text later) */
+#output {
+  margin-top: 30px;
+  padding: 20px;
+  background: #000100;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  text-align: left;
+}

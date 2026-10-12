@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wildlife & Nature Conservation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+ <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="/MSE/Wildlife & Nature Conservation Emblem.png" alt="Wildlife Conservation Logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Species</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="support-btn">Support Us</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="overlay">
+      <h1>Protect Wildlife, Preserve Nature</h1>
+      <p>Join us in conserving forests, oceans, and endangered species.</p>
+      <a href="#" class="btn">Get Involved</a>
+    </div>
+  </section>
+
+  <!-- Featured Species -->
+  <section class="species">
+    <h2>Endangered Species</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://thumbs.dreamstime.com/b/majestic-bengal-tiger-its-striking-orange-black-coat-ai-306965335.jpg" alt="Tiger">
+        <h3>Tiger</h3>
+        <p>Status: Endangered</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/474x/6c/fd/4a/6cfd4af381c458d45fefb77e2289e814--kakapo-parrot-flightless-parrot.jpg" alt="Kakapo">
+        <h3>Kakapo (Night Parrot)</h3>
+        <p>Status: Critically Endangered</p>
+      </div>
+      <div class="card">
+        <img src="https://static.vecteezy.com/system/resources/previews/053/373/221/large_2x/a-snow-leopard-walking-on-a-snowy-landscape-showcasing-its-beautiful-fur-and-surroundings-photo.jpg" alt="Snow Leopard">
+        <h3>Snow Leopard</h3>
+        <p>Status: Vulnerable</p>
+      </div>
+    <div class="card">
+      <img src="https://www.aurifil.com/wp-content/uploads/2020/12/AfricanPenguin-1000.jpg" alt="Tiger">
+      <h3>African Penguin</h3>
+      <p>Status: Endangered</p>
+    </div>
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/67/e6/62/67e662d1b79ea4c180949d4fd06a99c0.jpg" alt="Sea Turtle">
+      <h3>Sea Turtle</h3>
+      <p>Status: Vulnerable</p>
+    </div>
+    <div class="card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.j8psuhJ3ySKuCTAqtM_0tAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Elephant">
+      <h3>Elephant</h3>
+      <p>Status: Threatened</p>
+    </div>
+    <div class="card">
+      <img src="https://animalfactguide.com/wp-content/uploads/2025/03/panda-climbing.jpg" alt="Panda">
+      <h3>Giant Panda</h3>
+      <p>Status: Vulnerable</p>
+    </div>
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/d0/8a/14/d08a14d773ba749b9aaa871708f30d1c.jpg" alt="Parrot">
+      <h3>Macaw Parrot</h3>
+      <p>Status: Threatened</p>
+    </div>
+    <div class="card">
+      <img src="https://a-z-animals.com/media/animals/images/original/polar_bear_7.jpg" alt="Polar Bear">
+      <h3>Polar Bear</h3>
+      <p>Status: Vulnerable</p>
+    </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects">
+    <h2>Our Conservation Projects</h2>
+    <<div class="project">
+  <h3>🌳 Reforestation</h3>
+  <p>Reforestation restores forests by planting trees in deforested areas. It helps fight climate change, protect wildlife, and support communities.</p>
+  <p><strong>Impact:</strong> Thousands of trees planted, cleaner air, and revived habitats.</p>
+</div>
+      <div class="project">🌊 Ocean Cleanup
+        <p>Ocean Cleanup focuses on removing plastic waste and pollutants from oceans and rivers. Millions of tons of plastic enter the seas every year, harming marine life and ecosystems. This project aims to clean existing pollution and prevent new waste from reaching the ocean.</p>
+      </div>
+      <div class="project">🐾 Wildlife Rescue
+        <p>Wildlife Rescue focuses on saving injured, orphaned, or displaced animals and rehabilitating them back into their natural habitats. It’s about giving vulnerable creatures a second chance at life.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Involved -->
+  <section class="involved">
+    <h2>Get Involved</h2>
+    <p>Volunteer, donate, or subscribe to our newsletter to support conservation.</p>
+    <a href="#" class="btn">Volunteer</a>
+    <a href="#" class="btn">Donate</a>
+ <section class="contact">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Enter your name" required>
+    <br>   <br>
+    <input type="email" id="email" placeholder="Enter your email" required>
+       <br>   <br>
+    <textarea id="message" placeholder="Write your message..." required></textarea>   <br>   <br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Output area -->
+  <div id="output"></div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Wildlife & Nature Conservation | Follow us on 🌐 Social Media</p>
+  </footer>
+</body>
+</html>
+<script>
+// Get form element
+const form = document.getElementById("contactForm");
+
+// Add event listener for submit
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); // stop page reload
+
+  // Get values entered by user
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  // Show same text after submission
+  document.getElementById("output").innerHTML = `
+    <h3>Form Submitted!</h3>
+    <p><strong>Name:</strong> ${name}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Message:</strong> ${message}</p>
+  `;
+  document.getElementById("result").innerHTML =
+                message + "<br>" +
+                "Name: " + name + "<br>" +
+                "Email " + email + "<br>" +
+                "Message: " + message;
+});
+</script>
+
+
+    
